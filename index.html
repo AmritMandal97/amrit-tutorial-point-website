@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrit's Tutorial Point - Professional Education Classes 1-8</title>
+    <meta name="description" content="Amrit's Tutorial Point offers comprehensive education for Classes 1-8. Expert teaching in all subjects including Computer Education. Located in Shantinagar More, Kalyangram, Kolkata.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Hover effects */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Glass morphism */
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        /* Scroll indicator */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        /* Custom gradient */
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 glass border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2 animate-fadeInUp">
+                    <i class="fas fa-graduation-cap text-2xl text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-800">Amrit's Tutorial Point</span>
+                </div>
+                <div class="flex items-center space-x-4 animate-fadeInUp">
+                    <a href="tel:+919874667767" class="text-blue-600 hover:text-blue-700 transition-colors">
+                        <i class="fas fa-phone text-lg"></i>
+                    </a>
+                    <a href="https://wa.me/919874667767?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20at%20Amrit's%20Tutorial%20Point.%20Could%20you%20please%20provide%20more%20information%3F" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="text-green-600 hover:text-green-700 transition-colors">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat gradient-bg" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7');"></div>
+        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto animate-fadeInUp">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Amrit's Tutorial Point
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 font-light">
+                "Guiding students through every step of their journey!"
+            </p>
+            <p class="text-lg md:text-xl mb-10 text-blue-50 max-w-2xl mx-auto">
+                Comprehensive education for Classes 1-8 with expert guidance in all subjects including Computer Education
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/919874667767?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20at%20Amrit's%20Tutorial%20Point.%20Could%20you%20please%20provide%20more%20information%3F"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <i class="fab fa-whatsapp mr-3 text-xl"></i>
+                    Book Free Demo Class
+                </a>
+                <a href="tel:+919874667767"
+                   class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-xl border-2 border-white/30 transition-all duration-300 transform hover:scale-105 glass">
+                    <i class="fas fa-phone mr-3"></i>
+                    Call Now
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl opacity-75"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fadeInUp">
+                    <img src="https://images.pexels.com/photos/5212321/pexels-photo-5212321.jpeg"
+                         alt="Professional Teaching"
+                         class="rounded-2xl shadow-2xl w-full h-96 object-cover hover-lift">
+                </div>
+                
+                <div class="space-y-6 animate-fadeInUp">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Meet Your <span class="text-blue-600">Dedicated Educator</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Welcome to Amrit's Tutorial Point, where personalized education meets excellence. 
+                        With years of dedicated teaching experience, I provide comprehensive learning support 
+                        for students from Classes 1 to 8.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            <span class="text-gray-700">Expert in all primary subjects</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            <span class="text-gray-700">Specialized Computer Education</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            <span class="text-gray-700">Individual attention for every student</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            <span class="text-gray-700">Proven track record of student success</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Our <span class="text-blue-600">Classes & Subjects</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive curriculum designed to build strong foundations and foster academic excellence
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Classes 1-4 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-fadeInUp">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                            <i class="fas fa-book-open text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Classes 1-4</h3>
+                        <p class="text-blue-600 font-semibold">Foundation Years</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-700">Mathematics</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-700">English</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-700">Science</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-700">Social Studies</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700 font-semibold">Computer Education</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span class="text-gray-700">All Other Subjects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classes 5-8 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift animate-fadeInUp">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                            <i class="fas fa-desktop text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Classes 5-8</h3>
+                        <p class="text-green-600 font-semibold">Advanced Learning</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700 font-semibold">English Language & Literature</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700 font-semibold">Social Studies</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-700 font-semibold">Computer Science</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <p class="text-sm text-green-700">
+                            <strong>Specialized Focus:</strong> Advanced concepts in core subjects with emphasis on practical computer skills and comprehensive social studies coverage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Schedule & <span class="text-blue-600">Contact</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Schedule -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 animate-fadeInUp">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-clock text-2xl text-blue-600 mr-3"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Class Schedule</h3>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2 border-b border-blue-200">
+                            <span class="font-semibold text-gray-700">Monday</span>
+                            <span class="text-blue-600">4:00 PM - 6:30 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-blue-200">
+                            <span class="font-semibold text-gray-700">Tuesday - Friday</span>
+                            <span class="text-blue-600">4:00 PM - 8:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-blue-200">
+                            <span class="font-semibold text-gray-700">Saturday</span>
+                            <span class="text-blue-600">4:00 PM - 8:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="font-semibold text-gray-700">Sunday</span>
+                            <span class="text-red-500 font-semibold">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 animate-fadeInUp">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-phone text-2xl text-green-600 mr-3"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Get In Touch</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-phone text-green-600 text-xl mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-800">Phone</p>
+                                <a href="tel:+919874667767" class="text-green-600 hover:text-green-700 text-lg transition-colors">
+                                    +91 98746 67767
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fab fa-whatsapp text-green-600 text-xl mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-800">WhatsApp</p>
+                                <a href="https://wa.me/919874667767?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20at%20Amrit's%20Tutorial%20Point.%20Could%20you%20please%20provide%20more%20information%3F"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="text-green-600 hover:text-green-700 transition-colors">
+                                    Chat with us instantly
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-map-marker-alt text-green-600 text-xl mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-800">Address</p>
+                                <p class="text-gray-600">
+                                    Shantinagar More, Kalyangram<br>
+                                    Kolkata, West Bengal 743122
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Start Your Learning Journey?
+            </h2>
+            <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                Join Amrit's Tutorial Point and experience personalized education that truly makes a difference. Book your free demo class today!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/919874667767?text=Hi!%20I'm%20interested%20in%20enrolling%20my%20child%20at%20Amrit's%20Tutorial%20Point.%20Could%20you%20please%20provide%20more%20information%3F"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <i class="fab fa-whatsapp mr-3 text-xl"></i>
+                    Book Free Demo Class
+                </a>
+                <a href="tel:+919874667767"
+                   class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-xl border-2 border-white/30 transition-all duration-300 transform hover:scale-105 glass">
+                    <i class="fas fa-phone mr-3"></i>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <i class="fas fa-graduation-cap text-2xl text-blue-400"></i>
+                    <span class="text-xl font-bold">Amrit's Tutorial Point</span>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    "Guiding students through every step of their journey!"
+                </p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Amrit's Tutorial Point. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeInUp');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section > div').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
